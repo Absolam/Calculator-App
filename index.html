@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <main class="calc-container">
+      <div class="display">
+        <h3></h3>
+        <h2></h2>
+      </div>
+      <ul class="numpad">
+        <li class="reset">A/C</li>
+        <li>del</li>
+        <li>/</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>x</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>-</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>+</li>
+        <li>0</li>
+        <li>.</li>
+        <li class="equal">=</li>
+      </ul>
+      <div class="history off">
+        <div class="one-container">
+          <p class="one small-print"></p>
+          <p class="one-sub large-print"></p>
+        </div>
+        <div class="two-container">
+          <p class="two small-print"></p>
+          <p class="two-sub large-print"></p>
+        </div>
+        <div class="three-container">
+          <p class="three small-print"></p>
+          <p class="three-sub large-print"></p>
+        </div>
+        <div class="four-container">
+          <p class="four small-print"></p>
+          <p class="four-sub large-print"></p>
+        </div>
+        <div class="five-container">
+          <p class="five small-print"></p>
+          <p class="five-sub large-print"></p>
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="#000000"
+        viewBox="0 0 256 256"
+        onclick="swap(); log()"
+      >
+        <rect width="256" height="256" fill="none"></rect>
+        <line
+          x1="128"
+          y1="80"
+          x2="128"
+          y2="128"
+          fill="none"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <line
+          x1="169.56922"
+          y1="152"
+          x2="128"
+          y2="128"
+          fill="none"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <polyline
+          points="71.833 99.716 31.833 99.716 31.833 59.716"
+          fill="none"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <path
+          d="M65.7746,190.2254a88,88,0,1,0,0-124.4508L31.83348,99.71573"
+          fill="none"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </main>
+    <section>
+      <!-- <button class="" onclick="swap(); log()"></button> -->
+      <!-- <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-history"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#000000"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        onclick="swap(); log()"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <polyline points="12 8 12 12 14 14" />
+        <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+      </svg> -->
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
