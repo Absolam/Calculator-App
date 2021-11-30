@@ -125,10 +125,10 @@ function swap() {
 function log() {
   if (answer3.length <= 0) {
     one.textContent = "No history";
-    two.textContent = "-";
-    three.textContent = "-";
-    four.textContent = "-";
-    five.textContent = "-";
+    two.textContent = "";
+    three.textContent = "";
+    four.textContent = "";
+    five.textContent = "";
   } else if (answer3.length <= 1) {
     one.textContent = his[his.length - 1];
     oneSub.textContent = "= " + answer3[answer3.length - 1];
